@@ -1,7 +1,7 @@
 
 $(function() {
 
-
+//document.ready
 
 });
 
@@ -10,27 +10,33 @@ $(window).on('load', function(){
         var initial = document.getElementById('initialBackground');
         return (initial.scrollHeight > initial.clientHeight);
     }
+
+    function randomBinary() {
+        return ~~(Math.random() >= 0.5);
+    }
+
+
+
+
     var initial = $('#initialBackground');
 
     while (!checkFull()) {
-        /*var a = document.createElement('a');
-        a.innerHTML = '0';
-        a.style.padding = '1px';
-        a.style.fontSize = '20px';
-        a.style.fontFamily = 'Courier new';
-        */
-        if (Math.random() >= 0.5) {
-            initial.append($('<a class="BB" style="opacity: 0; margin: 15px; font-size: 3vw;">0</a>'));
-        } else {
-            initial.append($('<a class="BB" style="opacity: 0; margin: 15px; font-size: 3vw;">1</a>'));
-        }
-
+        var a = $('<a class="BB" style="opacity: 0; font-size: 2vw; font-family: Courier, monospace">0</a>');
+        $(a).css('margin-top', Math.floor((Math.random() * 50) + 15));
+        $(a).css('margin-right', Math.floor((Math.random() * 50) + 15));
+        $(a).css('margin-bottom', Math.floor((Math.random() * 50) + 15));
+        $(a).css('margin-left', Math.floor((Math.random() * 50) + 15));
+        initial.append(a);
     }
     initial.children().last().remove();
 
     $('.BB').on('mouseover', function(){
-        $(this).animate({opacity: '0.4'}, 400);
-        $(this).animate({opacity: '0'}, 800);
+        $(this).html(randomBinary());
+        $(this).clearQueue();
+        $(this).animate({opacity: '0.25'}, 300);
+        $(this).delay(400).html(randomBinary());
+        $(this).animate({opacity: '0.1'}, 300);
+        $(this).animate({opacity: '0'}, 400);
     });
 
 });
