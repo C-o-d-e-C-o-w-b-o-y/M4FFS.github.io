@@ -32,7 +32,6 @@ html * {
     z-index: 5;
 }
 
-.BB:hover {
-    cursor: none;
-    color: black !important;
+.BB {
+    cursor: default;
 }

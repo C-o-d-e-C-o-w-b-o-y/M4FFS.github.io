@@ -19,11 +19,18 @@ $(window).on('load', function(){
         a.style.fontSize = '20px';
         a.style.fontFamily = 'Courier new';
         */
-        var a = $('<a class="BB" style="color: white; margin: 30px; font-size: 3vw;">0</a>');
-        initial.append(a);
+        if (Math.random() >= 0.5) {
+            initial.append($('<a class="BB" style="opacity: 0; margin: 15px; font-size: 3vw;">0</a>'));
+        } else {
+            initial.append($('<a class="BB" style="opacity: 0; margin: 15px; font-size: 3vw;">1</a>'));
+        }
+
     }
     initial.children().last().remove();
 
-
+    $('.BB').on('mouseover', function(){
+        $(this).animate({opacity: '0.4'}, 400);
+        $(this).animate({opacity: '0'}, 800);
+    });
 
 });
