@@ -1,5 +1,5 @@
 html * {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Courier, monospace;
 }
 
 .parallax-window {
@@ -7,7 +7,7 @@ html * {
     background: transparent;
 }
 
-.parallax-mirror:nth-of-type(1) {
+.parallax-mirror{
     opacity: 0.4;
 }
 
@@ -20,24 +20,29 @@ html * {
     position: relative;
 }
 
-#initialBackground {
+#matrixBackground {
     position: absolute;
-    top: 0;
+    top: -300px;
     left: 0;
-    height: 100vh;
+    height: calc(100vh + 300px);
     width: 100vw;
     max-width: 100%;
     overflow: hidden;
-    word-wrap: break-word;
-    z-index: 5;
+    z-index: 1;
+    margin: 0;
 }
 
-.BB {
+.mB {
     cursor: default;
+    color: #20C20E;
+    display: inline-block;
+    position: absolute;
+    opacity: 1;
+    font-size: 23px;
 }
 
 .paratext {
-    color: white;
+    color: #20C20E;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -46,4 +51,17 @@ html * {
 
 .paratext a {
     text-shadow: 5px 5px 2px black;
+}
+
+.nameTitle {
+    margin: 0 auto;
+    font-size: 10vh;
+    font-weight: bold;
+    color: #20C20E;
+    text-align: center;
+    line-height: 100vh;
+}
+
+body {
+    background-color: black;
 }
