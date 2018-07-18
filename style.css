@@ -1,5 +1,7 @@
+@font-face { font-family: OCR-A; src: url('font/OCR-A.TTF'); }
+
 html * {
-    font-family: Courier, monospace;
+    font-family: OCR-A, Courier, monospace;
 }
 
 .parallax-window {
@@ -16,7 +18,6 @@ html * {
     width: 100vw;
     max-width: 100%;
     overflow: hidden;
-    word-wrap: break-word;
     position: relative;
 }
 
@@ -28,7 +29,7 @@ html * {
     width: 100vw;
     max-width: 100%;
     overflow: hidden;
-    z-index: 1;
+    z-index: -5;
     margin: 0;
 }
 
@@ -55,7 +56,7 @@ html * {
 
 .nameTitle {
     margin: 0 auto;
-    font-size: 10vh;
+    font-size: 12vh;
     font-weight: bold;
     color: #20C20E;
     text-align: center;
@@ -65,3 +66,14 @@ html * {
 body {
     background-color: black;
 }
+
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.loadingPage {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+    background-color: black;
+	background: url(img/loading.gif) center no-repeat #000;
