@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <meta name="description" content="Environmentally friendly plant fibre-based pots, tubes, trays and dinnerware under the brand Vipot.">
+        <meta name="author" content="Matthew Williams | matthew(at)williams(dot)hk">
+        <title>ZhuHai GreenTech - Home</title>
+        <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+        <link rel="manifest" href="./favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
+        <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 670px)" href="./css/mobile.css" />
+        <script src="./js/jquery3.js"></script>
+        <script src="./js/parallax.min.js"></script>
+        <script src="./js/main.js"></script>
+    </head>
+    <body>
+        <header class="shadow">
+            <div class="container">
+                <div id="branding">
+                    <a href="./index.html" class="noSelect">ZhuHai GreenTech</a>
+                </div>
+                <nav>
+                    <div id="overlayNav" class="overlay">
+                        <div class="container">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        </div>
+                        <div class="overlay-content">
+                            <a href="./index.html">Home</a>
+                            <a href="./about.html">About Vipot</a>
+                            <a href="./process.html">Production Process</a>
+                            <a href="./benefits.html">Ecological Benefits</a>
+                            <a href="./products.html">Products</a>
+                            <a href="./delivery.html">Packaging & Delivery</a>
+                            <a href="./gallery.html">Gallery</a>
+                            <a href="./contact.html">Contact Us</a>
+                        </div>
+                    </div>
+                    <div id="menuBtn" class="noSelect" onclick="openNav()">
+                    <a> Menu </a>
+                    <div class="hamburgerContainer" onclick="openNav()">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div id="parallaxStuff">
+            <div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="img/decor3_3pot.jpg">
+                <div class="parallax-content">
+                </div>
+            </div>
+        </div>
+
+        <img id="mobileParallaxAlt" src="img/decor3_3pot.jpg" style="display: none; max-width: 100% !important;">
+
+        <div class="greenWideInfo">
+            <div class="container">
+                <p> <a style="font-size: 21px; color: #e8d3b9">Zhuhai Greentech Co., Ltd. </a>was established in 2001 to manufacture environmentally friendly plant fibre-based pots, tubes, trays and dinnerware under the brand Vipot. Our factory is located in Zhuhai, China and all international marketing proceedings are handled in Hong Kong.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <section id="boxes">
+                    <div class="box noSelect" onclick="goAbout()">
+                        <div class="boxImgContainer">
+                        <img src="./img/home_about.jpg">
+                        </div>
+                        <h3>About Vipot</h3>
+                        <p>Learn more about our environmentally friendly plant pot</p>
+                    </div>
+                    <div class="box noSelect" onclick="goProcess()">
+                        <div class="boxImgContainer">
+                        <img src="./img/home_production.png">
+                        </div>
+                        <h3>Production Process</h3>
+                        <p> How we make our products from start to finish</p>
+                    </div>
+                    <div class="box noSelect" onclick="goBenefits()">
+                        <div class="boxImgContainer">
+                        <img src="./img/home_benefits.png">
+                        </div>
+                        <h3>Ecological Benefits</h3>
+                        <p>Learn about the vast environmental benefits of our products</p>
+                    </div>
+                    <div class="box noSelect" onclick="goProducts()">
+                        <div class="boxImgContainer">
+                        <img src="./img/home_products.png">
+                        </div>
+                        <h3>Production - Models</h3>
+                        <p>See our range of different pots and other wares</p>
+                    </div>
+                    <div class="box noSelect" onclick="goDelivery()">
+                        <div class="boxImgContainer">
+                        <img src="./img/home_delivery.png">
+                        </div>
+                        <h3>Packing & Delivery</h3>
+                        <p>How we package and send our shipments</p>
+                    </div>
+                    <div class="box noSelect" onclick="goGallery()">
+                        <div class="boxImgContainer">
+                        <img src="./img/home_gallery.jpg">
+                        </div>
+                        <h3>Gallery</h3>
+                        <p>See images of our various products in action</p>
+                    </div>
+            </section>
+        </div>
+        <footer>
+            <p>This site and its contents are confidential and proprietary to Zhuhai Greentech Co., Ltd. Any reproduction, disclosure or use of the material other than for the specific purpose agreed upon is prohibited without written permission from Zhuhai Greentech Co., Ltd.<br> Zhuhai Greentech, Copyright &copy; 2018 | <a href="contact.html" style="color: #e8d3b9">Contact Us</a></p>
+        </footer>
+    </body>
+</html>

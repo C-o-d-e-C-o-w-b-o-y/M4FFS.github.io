@@ -1,0 +1,499 @@
+body {
+    font-family: Helvetica;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(rgba(232, 211, 185, 0.4),rgba(232, 211, 185, 0.6)), url('../img/ricepaper.png');
+    min-width: 670px;
+}
+
+.container {
+    width: 80%;
+    max-width: 70em;
+    margin: auto;
+    overflow: hidden;
+}
+
+.noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+}
+
+header {
+    background: linear-gradient(rgba(60, 132, 62, 1),rgba(129, 164, 111, 1));
+    color: white;
+    padding-top: 15px;
+    height: 65px;
+    border-bottom: #475e3b 3px solid;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+header #branding a {
+    top: 0;
+    font-weight: bold;
+    font-size: 2.6em;
+    font-family: Verdana;
+}
+
+header #branding a:hover {
+    text-shadow: 2px 2px 8px #000000;
+    opacity: 0.8;
+}
+
+header nav {
+    float: right;
+}
+
+.parallax-window {
+    background: transparent;
+    max-width: 100em;
+    margin: 0 auto;
+}
+
+.parallax-mirror {
+    border-bottom: #475e3b 2px solid;
+}
+
+.parallax-content {
+    z-index: 2;
+    position: relative;
+    height: 500px;
+    background:rgba(255,255,255,0.1);
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+}
+
+.parallax-text {
+    padding-top: 90px;
+}
+
+.parallax-text {
+    padding-top: 90px;
+}
+
+.parallax-title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.banner {
+    margin: 0;
+    padding: 0;
+    background: #3c843e;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    border-bottom: #285829 2px solid;
+    border-top: #285829 2px solid;
+}
+
+.pageTitle {
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.secondaryTitle {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.brownBanner {
+    background: rgba(205, 158, 101, 0.3);
+    text-align: left;
+    padding: 10px;
+    padding-top: 30px;
+    color: black;
+}
+
+.brownBannerText {
+    font-size: 18px;
+}
+
+.bbt {
+    border-top: 1px solid #c1863e;
+}
+
+.bbb {
+    border-bottom: 1px solid #c1863e;
+}
+
+.greenWideInfo {
+    margin: 0;
+    background: linear-gradient(rgba(60, 132, 62, 0.9),rgba(129, 164, 111, 1));
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-shadow: 1px 1px 1px #000000;
+    border-bottom: #475e3b 2px solid;
+}
+
+.imgContainer {
+    text-align: center;
+    padding: 10px;
+}
+
+.imgContainer img {
+    border: 2px outset #ce9e64;
+}
+
+figure {
+    padding: 0;
+    margin: 0;
+}
+
+figure figcaption {
+    text-align: center;
+    font-size: 16px;
+}
+
+#boxes {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#boxes .box {
+    display: inline-block;
+    top: 0;
+    width: 29%;
+    min-width: 10em;
+    min-height: 22em;
+    margin: 10px;
+    border: 1px solid #102310;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 14px 0 rgba(0, 0, 0, 0.19);
+    background: rgba(255,255,255,0.4);
+    vertical-align:top;
+}
+
+#boxes .box:hover {
+    background: linear-gradient(rgba(232, 211, 185, 0.6),rgba(232, 211, 185, 0.6));
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    border-color: black;
+}
+
+#boxes .box p {
+    padding: 5px;
+}
+
+#boxes .box img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 2px 4px -2px #000000;
+}
+
+.boxImgContainer {
+    width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    border-top: #475e3b 2px solid;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(rgba(129, 164, 111, 1), rgba(60, 132, 62, 1) 80%);
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    background-color: rgb(32, 70, 33);
+    background-color: rgba(60, 132, 62, 0.80);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 5%;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 4vh;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    text-shadow: 0 0 3px #285829;
+}
+
+.overlay-content a:hover, .overlay-content a:focus {
+    color: #183519;
+    background-color: rgba(120, 192, 122, 0.80);
+    border-radius: 10px;
+}
+
+
+.overlay .closebtn {
+    margin-top: -5px;
+    padding: 0px;
+    float: right;
+    font-size: 60px;
+}
+
+.overlay .closebtn:hover {
+    color: #183519;
+}
+
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+#menuBtn {
+    line-height: 65px;
+    cursor: pointer;
+    border-radius: 7px;
+    text-shadow: 1px 1px 1px #000000;
+    padding: 3px 4px;
+}
+
+#menuBtn:hover a{
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#menuBtn:hover .bar1, #menuBtn:hover .bar2, #menuBtn:hover .bar3 {
+    background-color: #183419;
+}
+
+
+#menuBtn a{
+    color: white;
+    font-size: 22px;
+}
+
+.hamburgerContainer {
+    display: inline-block;
+    height: 30px;
+}
+
+.bar1 {
+    width: 35px;
+    height: 5px;
+    background-color: #28572a;
+    margin-top: 5px;
+}
+
+.bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #28572a;
+    margin: 8px 0;
+}
+
+.bugBackground {
+    background: #285829;
+}
+
+li {
+    list-style: none;
+}
+
+li:before {
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url('../img/plantpot.svg');
+}
+
+.bigBullet {
+    width: 30px;
+    height: 30px;
+    padding: 0px 2px;
+}
+
+.model img {
+    display: inline-block;
+    border-radius: 4px;
+    width: 200px;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+.modelTitle {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.modelText {
+    margin: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 250px);
+}
+
+.modelText2Img {
+    margin: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 500px);
+}
+
+.model {
+    background: rgba(199, 146, 82, 0.4);
+}
+
+.model:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.model ul {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+}
+
+.bigModel {
+    background: rgba(199, 146, 82, 0.4);
+    border-top: 1px solid #c1863e;
+    border-bottom: 1px solid #c1863e;
+}
+
+.bigModelText {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 20px);
+    margin: 10px;
+}
+
+.bigModelText h2 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.bigModelText h3 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.bigModelText img {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    margin-top: 10px;
+    border: 1px outset #ce9e64;
+}
+
+.bigModelText ul {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+.bigModelText ul li {
+    margin-top: 10px;
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.bigModelText ul a {
+    font-size: 18px;
+    margin-left: 1em;
+}
+
+#productBtn {
+    position: relative;
+    display: inline-block;
+}
+
+#dropbtn {
+    font-size: 22px;
+    border: 1px solid #c1863e;
+    border-radius: 2px;
+    background-color: #E1CCAB;
+    padding: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgb(221, 188, 144);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 6px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background: rgb(211, 178, 134);
+    font-weight: bold;
+}
+
+.productBtn:hover .dropdown-content {
+    display: block;
+}
+
+.productBtn:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.sticky {
+  position: fixed;
+  top: 10px;
+}

@@ -1,0 +1,109 @@
+body {
+    min-width: unset;
+}
+
+.container {
+    width: 95%;
+    max-width: unset;
+}
+
+header #branding {
+    padding-top: 15px;
+}
+
+header #branding a {
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+
+#menuBtn a{
+    font-size: 20px;
+}
+
+#boxes .box {
+    min-height: unset;
+    height: 23.5em;
+}
+
+.hamburgerContainer {
+    display: inline-block;
+    height: 20px;
+}
+
+.bar1 {
+    width: 30px;
+    height: 4px;
+    margin-top: 0px;
+}
+
+.bar2, .bar3 {
+    width: 30px;
+    height: 4px;
+    margin: 6px 0;
+}
+
+.overlay a {
+    font-size: 20px;
+}
+
+#parallaxStuff {
+    display: none;
+}
+
+#mobileParallaxAlt {
+    display: inline !important;
+    margin-bottom: -7px; /* removing line :( */
+}
+
+.greenWideInfo {
+    border-top: #475e3b 2px solid;
+    font-size: 16px !important;
+}
+
+.greenWideInfo a:first-child{
+    font-size: 18px !important;
+}
+
+img {
+    max-width: 100% !important;
+}
+
+figure {
+    margin-right: 0 !important;
+}
+
+.model img {
+    display: block !important;
+    max-width: 90% !important;
+    margin: 10px auto !important;
+}
+
+.modelText {
+    display: block !important;
+    width: 90% !important;
+    margin: 10px auto !important;
+}
+
+.modelText2Img {
+    display: block !important;
+    width: 90% !important;
+    margin: 10px auto !important;
+}
+
+.bigModelText ul a {
+    margin-left: 0 !important;
+}
+
+.bigModelText img {
+    width: 90% !important;
+}
+
+@media only screen and (max-width: 400px) {
+    header #branding a {
+        font-size: 1.4em;
+    }
+
+    .box {
+        margin: 2px !important;
+    }
+}
