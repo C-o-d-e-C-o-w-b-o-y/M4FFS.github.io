@@ -77,3 +77,38 @@ body {
 	z-index: 9999;
     background-color: black;
 	background: url(img/loading.gif) center no-repeat #000;
+}
+
+.projectContainer {
+    border: 1px solid #20C20E;
+    background-color: rgba(32,194,14, 0.1);
+    border-radius: 4px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2em;
+    color: #20C20E;
+    padding: 15px;
+}
+
+.projectContainer img {
+    width: 200px;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.projectTitle {
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.projectDesc {
+    display: inline-block;
+    width: calc(100% - 300px);
+    float: right;
+    font-size: 18px;
+}

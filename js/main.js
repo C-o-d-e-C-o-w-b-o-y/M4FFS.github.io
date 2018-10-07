@@ -1,6 +1,6 @@
 $(function() {
     var ImageArray = ['img/code-bg-1.png','img/code-bg-2.png','img/code-bg-3.png','img/code-bg-4.png'];
-    $('.parallax-slider').eq(1).attr("src", ImageArray[Math.floor(Math.random() * ImageArray.length)]);
+    $('.parallax-slider').eq(0).attr("src", ImageArray[Math.floor(Math.random() * ImageArray.length)]);
 
     function randomAscii() {
         return String.fromCharCode(Math.floor(Math.random() * 94 + 33));
