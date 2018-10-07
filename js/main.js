@@ -28,10 +28,12 @@ $(function() {
     }
 
     var matrix = $('#matrixBackground');
+    var left = Math.floor(Math.random() * 49)*2 + 'vw';
+        matrixRain(left);
     (function loop() {
     var randTime = Math.round(Math.random() * (2500 - 1499)) + 1500;
     setTimeout(function() {
-    var left = Math.floor(Math.random() * 49)*2 + 'vw';
+        left = Math.floor(Math.random() * 49)*2 + 'vw';
         matrixRain(left);
         loop();
     }, randTime);
